@@ -23,3 +23,10 @@ https://docs.npmjs.com/creating-and-publishing-an-org-scoped-package
 - Publish the package
 
 > npm publish --access public
+
+# Settings
+
+- `port`: the port to listen on.
+- `beforeListen`: optional; called after the app directory is loaded. The port is not bound
+  until the promise it returns resolves, and a rejection fails the boot.
+- `callbackFn`: optional; called once the port is bound.
